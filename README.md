@@ -1,10 +1,22 @@
 Canny Edge Detection (Custom Implementation)
 
-Overview
+📖 Overview of the Problem & Solution
 
-This project implements a custom version of the Canny Edge Detection algorithm from scratch, focusing on optimization techniques such as gradient assignment and non-maximum suppression. The goal is to explore the core mechanics of edge detection while comparing the results to OpenCV’s built-in Canny edge detector.
+Edge detection is a crucial step in computer vision applications such as image segmentation, object detection, and feature extraction. The Canny Edge Detector is a widely used method for detecting edges based on gradient magnitude and non-maximum suppression. This project re-implements the Canny Edge Detection algorithm from scratch to understand its intricacies and explore optimizations.
 
-The Canny Edge Detection algorithm is widely used in computer vision applications for detecting edges in an image by emphasizing regions with high-intensity changes. Instead of using OpenCV’s implementation, this project re-implements the algorithm step by step to gain a deeper understanding of its functionality and optimization possibilities.
+The solution involves computing gradients using the Sobel operator, applying non-maximum suppression to retain sharp edges, and using double thresholding with hysteresis to refine edge connectivity. The results are compared against OpenCV’s built-in Canny function to evaluate performance and accuracy.
+
+🏗️ Tech Stack
+
+This project is implemented using:
+
+Python – Primary programming language.
+
+NumPy – Efficient numerical computations.
+
+OpenCV – Image processing and comparison with built-in Canny function.
+
+Matplotlib – Visualization of results.
 
 Why Implement a Custom Canny Edge Detector?
 
